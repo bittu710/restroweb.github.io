@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="ghj.css">
+    </head>
+    <title>Maharaja Restaurant </title>
+  <link rel="icon" type="image" href="331_509739076.jpg">
+    
+    <header>
+
+        <div class="logo">
+            <img src="331_509739076.jpg" alt="logo ">
+          </div>
+        <h1>Maharaja Restaurant</h1>
+    </header>
+    <nav class = "nav">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu </a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+    <main>
+        <div>
+            <img src = "istockphoto-922783734-612x612.jpg" width="500" height="300">
+            <img src="indian-food-1200.jpg" width="500" height="300">
+            <img src="istockphoto-868408746-612x612.jpg" width="512" height="300">
+        </div>
+
+        <section id="feature" class="section-p1">
+            <div class="fe-box">
+                <img src="pngtree-fast-and-free-delivery-man-design-png-image_6427583.jpg" alt="">
+                <h4>Free Delivery</h4>
+            </div>
+        
+            <div class="fe-box">
+              <img src="future-of-online-food-ordering-by-restaurant-app-restroapp-compressed.jpg" alt="">
+              <h4>Online Orders</h4>
+          </div>
+        
+          <div class="fe-box">
+            <img src="restaurant-offer-post-design-template-849b9069fd618342e2592dd9992ee7b5_screen.jpg" alt="">
+            <h4>Discount Offers</h4>
+        </div>
+        
+        <div class="fe-box">
+          <img src="24-hours-food-delivery-service-vector-2719154.jpg" alt="">
+          <h4>24/7 Support</h4>
+        </div>
+            </section> 
+            
+
+
+
+            <section>
+                <div class="slideshow-container">
+                   <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="istockphoto-1298039173-170667a.jpg" style="width:100%"  height="600">
+                      <div class="text">Welcome to our Restuarant !</div>
+                      </div>
+                      <div class="mySlides fade">
+                         <div class="numbertext">2 / 3</div>
+                         <img src="best-restaurants-soleil.jpg" style="width:100%"  height="600">
+                         <div class="text">Enjoy our luxury dining experience !</div>
+                      </div>
+                      <div class="mySlides fade">
+                         <div class="numbertext">3 / 3</div>
+                         <img src="png-clipart-black-background-menu-food-drink-with-text-overlay-beer-cafe-european-cuisine-menu-restaurant-hand-painted-menu-design-watercolor-painting-infographic.png" style="width:100%"  height="600">
+                         <div class="text">Get diverse meals ! </div>
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <script>
+                   var slideIndex = 1;
+                   showSlides(slideIndex);
+                   function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                   }
+                   function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                   }
+                   function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                         slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                         dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " active";
+                   }
+                </script>
+             </section>
+            
+
+
+
+            <section id="product1" class="section-p1">
+                <h1 class = "h1">What's on your mind today</h1>
+                
+                <div class="pro-container">
+                    <div class="pro">
+                        <img src="grilled-cheese-sandwich.jpg" alt="" onclick="window.location.href='singleproduct.html'">
+                        <div class="des">
+                            
+                            <h3>Cheesy Sandwich</h3>
+                            <h4>Enjoy the Golden corn mixed with herbs and cheese.</h4>
+                            <h5 class = "h5">Starting from &#8377;59</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="pro">
+                        <img src="loaded-burgers-carousel.jpg" alt="">
+                        <div class="des">
+                            
+                            <h3>Loaded Burger</h3>
+                            
+                            <h4>A crunchy potato patty crowned with lettuce, onions and our secret non-spicy sauce.</h4>
+                          <h5 class = "h5">Starting from &#8377;99</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="pro">
+                      <img src="downloadkj.jpg" alt="">
+                        <div class="des">
+                            
+                            <h3>Refreshing drinks</h3>
+                            <h4>Crafted Zero-Alcohol Beer. A blend of vibrancy and freshness, this one's a cool minty drink.</h4>
+                            <h5 class = "h5">Starting from &#8377;89</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="pro">
+                      <img src="97bf82f8bc2d4af924687d1de20bbb38_1604043580.jpg" alt="">
+                        <div class="des">
+                            
+                            <h3>Sizzling Pizza</h3>
+                            <h4>Hot & spicy pizza with a new spicy peri peri sauce and topped with onion & red paprika on a cheesy base.</h4>
+                            <h5 class = "h5">Starting from &#8377;99</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="pro">
+                        <img src="WhiteSaucePasta6-500x375.jpg" alt="">
+                        <div class="des">
+                            
+                            <h3>Italian Pasta</h3>
+                            <h4>A bad day eating pasta is better than a good day doing anything else.</h4>
+                            <h5 class = "h5">Starting from &#8377;79</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="pro">
+                        <img src="downloadhg.jpg" alt="">
+                        <div class="des">
+                            
+                            <h3>Biryani</h3>
+                            <h4>Veggies and flavored rice slow cooked in a delicious mixed of Indian masala flavoured with aromatic spices and served with marinated pieces of paneer which is grilled to perfection!</h4>
+                            <h5 class = "h5">Starting from &#8377;199</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="pro">
+                        <img src="images.jpg" alt="">
+                        <div class="des">
+                            
+                            <h3>Paneer Combo</h3>
+                            <h4>a rich and creamy dish of paneer (cottage cheese) in a tomato, butter and cashew sauce (known as makhani gravy). The dish has a lovely tang coming from the tomatoes and is slightly sweet with a creamy and velvety feel to it.</h4>
+                            <h5 class = "h5">Starting from &#8377;349</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="pro">
+                        <img src="istockphoto-922783734-612x612.jpg" alt="">
+                        <div class="des">
+                            
+                            <h3>Thalis</h3>
+                            <h4>Different combo of 1 Seasonal Green Vegetable Curry+1 Paneer Vegetable+Jeera Rice/Pulao+Dal Fry+5 Roti+Boondi Raita+Salad+Achar+Papad+Gulab Jamun Masala Masala</h4>
+                            <h5 class = "h5">Starting from &#8377;149</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <div class="container">
+                <div class="row-flex">
+                    <div class="flex-column-form">
+                        <h3>
+                            Make a booking
+                        </h3>
+                        <form class="media-centered">
+                            <div class="form-group">
+                                 
+          <p>
+                                    Please leave your number we will
+                                    call to make a reservation
+                                </p>
+          
+                                 
+                                <input type="name" class="form-control"
+                                    id="exampleInputName1"
+                                    aria-describedby="nameHelp"
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control"
+                                    id="exampleInputphoneNumber1"
+                                    placeholder="Enter your phone number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="opening-time">
+                        <h3>
+                            Opening times
+                        </h3>
+                         
+          <p>
+                            <span>Monday—Thursday: 08:00 AM — 22:00 PM</span>
+                            <span>Friday—Saturday: 09:00 AM — 23:00 PM </span>
+                            <span>Sunday: 10:00 AM — 17:00 PM</span>
+                        </p>
+          
+                    </div>
+                    <div class="contact-address">
+                        <h3>
+                            Contact
+                        </h3>
+                         
+          <p>
+                            <span>910-602-8008</span>
+                            <span>15 Anand Nagar </span>
+                            <span>Nagpur, Maharashtra, 496009 </span>
+                        </p>
+          
+                    </div>
+                </div>
+            </div>
+          
+          
+    </main>
+
+
+    <footer class="All-Flex-center-align">
+        <p><a href="#">FAQ</a> <a href="#">Contact Us</a>
+             <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+               <a href="#">Refund Policy</a>
+                <a href="#">&copy; 2020 | Made by Omkar Debnath</a>
+    </footer>
+</html>
